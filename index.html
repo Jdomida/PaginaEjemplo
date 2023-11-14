@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de HTML</title>
+</head>
+
+<body>
+    <header>
+        <h1>Ejemplo de HTML</h1>
+
+        <nav aria-label="Navegación">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article id="html">
+            <h2>HTML</h2>
+            <section>
+                <h3>Párrafos según escribo</h3>
+                <pre>
+    public class HolaMundo {
+        public static void main(String[] args) {
+                System.out.println("Hola mundo");
+            }
+    }
+            </pre>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure, modi?</p>
+                <p>Veritatis hic nam amet eius facilis eos numquam, commodi doloremque?</p>
+                <p>Voluptates ex facilis sed odio excepturi eligendi! Ullam, corporis officiis!</p>
+            </section>
+            <section>
+                <h3>Listas</h3>
+                <!-- Unordered List -->
+                <ul>
+                    <!-- List Item -->
+                    <li>Elemento 1</li>
+                    <li>Elemento 2</li>
+                    <li>Elemento 3</li>
+                </ul>
+                <!-- ordered List -->
+                <ol>
+                    <!-- List Item -->
+                    <li>Elemento 1</li>
+                    <li>Elemento 2</li>
+                    <li>Elemento 3</li>
+                </ol>
+                <!-- definition list -->
+                <dl>
+                    <dt>Elemento 1</dt>
+                    <dd>Descripción del elemento 1</dd>
+
+                    <dt>Elemento 2</dt>
+                    <dd>Descripción del elemento 2</dd>
+
+                    <dt>Elemento 3</dt>
+                    <dd>Descripción del elemento 3</dd>
+                </dl>
+            </section>
+            <section id="tablas">
+                <h3>Tablas</h3>
+
+                <table>
+                    <caption>Description of the table</caption>
+                    <!-- table content here -->
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Nombre</th>
+                            <th>Precio</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Jamón ibérico</td>
+                            <td>50€</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Paella</td>
+                            <td>20€</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Tortilla española</td>
+                            <td>10€</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section id="multimedia">
+                <h3>Multimedia</h3>
+                <figure>
+                    <img src="https://picsum.photos/id/999/200/300" alt="Imagen de prueba">
+                    <figcaption>Imagen de prueba</figcaption>
+                </figure>
+                    <audio src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" controls></audio>
+                    <video src="https://www.w3schools.com/html/mov_bbb.mp4" controls width="320" height="240">
+                        <track src="subtitles.vtt" kind="subtitles" srclang="en" label="English">
+                    </video>
+
+                    <iframe title="Google Maps"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1340.097208696391!2d-5.942995801084458!3d36.97862197260279!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0d8e2ab78ed2d3%3A0xc1f3cf3d98e17545!2sPan%20de%20Polvillo!5e0!3m2!1ses!2ses!4v1699976377836!5m2!1ses!2ses"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe title="Spotify Track" style="border-radius:12px"
+                        src="https://open.spotify.com/embed/track/39L3LdlHS3gqB62HPWaJRg?utm_source=generator"
+                        height="352" allowfullscreen=""
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                        loading="lazy"></iframe>
+
+
+            </section>
+            <section id="formularios">
+                <h3>Formulario de Juegos de Mesa</h3>
+                <div class="form-container">
+                    <form>
+                        <fieldset>
+                            <legend>Formulario de Juegos de Mesa</legend>
+
+                            <div class="form-group">
+                                <label for="nombre">Nombre:</label>
+                                <input type="text" id="nombre" name="nombre" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="edad">Edad:</label>
+                                <input type="number" id="edad" name="edad" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="gustos">Gustos de Juegos de Mesa:</label>
+                                <textarea id="gustos" name="gustos" required></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="juego">Juego de Mesa Favorito:</label>
+                                <select id="juego" name="juego" required>
+                                    <option value="">Seleccione un juego</option>
+                                    <option value="Catan">Catan</option>
+                                    <option value="Ticket to Ride">Ticket to Ride</option>
+                                    <option value="Codenames">Codenames</option>
+                                    <option value="Pandemic">Pandemic</option>
+                                    <option value="Scythe">Scythe</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Juegos de Mesa Favoritos:</label><br>
+                                <input type="checkbox" id="juego1" name="juegos" value="Catan">
+                                <label for="juego1">Catan</label><br>
+                                <input type="checkbox" id="juego2" name="juegos" value="Ticket to Ride">
+                                <label for="juego2">Ticket to Ride</label><br>
+                                <input type="checkbox" id="juego3" name="juegos" value="Codenames">
+                                <label for="juego3">Codenames</label><br>
+                                <input type="checkbox" id="juego4" name="juegos" value="Pandemic">
+                                <label for="juego4">Pandemic</label><br>
+                                <input type="checkbox" id="juego5" name="juegos" value="Scythe">
+                                <label for="juego5">Scythe</label><br>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Opción de selección única:</label><br>
+                                <input type="radio" id="opcion1" name="opcion" value="Opción 1">
+                                <label for="opcion1">Opción 1</label><br>
+                                <input type="radio" id="opcion2" name="opcion" value="Opción 2">
+                                <label for="opcion2">Opción 2</label><br>
+                                <input type="radio" id="opcion3" name="opcion" value="Opción 3">
+                                <label for="opcion3">Opción 3</label><br>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Opciones de selección múltiple:</label><br>
+                                <input type="radio" id="opcion4" name="opciones" value="Opción 4">
+                                <label for="opcion4">Opción 4</label><br>
+                                <input type="radio" id="opcion5" name="opciones" value="Opción 5">
+                                <label for="opcion5">Opción 5</label><br>
+                                <input type="radio" id="opcion6" name="opciones" value="Opción 6">
+                                <label for="opcion6">Opción 6</label><br>
+                            </div>
+
+                            <div class="form-group">
+                                <button type="submit">Guardar</button>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </section>
+        </article>
+    </main>
+    <aside>
+        <nav aria-label>
+            <ul>
+                <li><a href="#">Elemento 1</a></li>
+                <li><a href="#">Elemento 2</a></li>
+                <li><a href="#">Elemento 3</a></li>
+                <li><a href="#">Elemento 4</a></li>
+                <li><a href="#">Elemento 5</a></li>
+            </ul>
+        </nav>	
+    </aside>
+    <footer>
+        <p>&copy;2023 Domi</p>
+        <p>
+            <a href="#">Arriba</a>
+        </p>
+    </footer>
+
+</body>
+</html>
